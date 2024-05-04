@@ -1,0 +1,63 @@
+@use 'variaveis';
+
+.header{
+    background: variaveis.$corDeFundoHeader;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 60px;
+    }
+    .menu{
+        &__list{
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            padding: 2px 2px 7px;
+            &__item{
+                
+                img{
+                    display: block;
+                    height: 40px;
+                }
+                a{
+                    color: variaveis.$corTextoHeader;
+                    font-size: 21px;
+                    font-weight: bold;
+
+                    &:hover{
+                        color: lighten(#fff, 10%);
+                    }
+
+                    img{
+                        height: 35px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+.icons{
+    &__list{
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        &__item{
+            img{
+                height: 24px;
+                max-width: 100%;
+            }
+            &:last-child{
+                img{
+                    height: 32px;
+                }
+            }
+        }
+    }
+}
+
+.branding{
+    height: 30px;
+}
