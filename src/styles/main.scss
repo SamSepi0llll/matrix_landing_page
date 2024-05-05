@@ -1,6 +1,8 @@
 @use 'variaveis';
 @use 'header';
 @use 'hero';
+@use 'for_you';
+@use 'footer';
 *{
     box-sizing: border-box;
     padding: 0;
@@ -9,12 +11,14 @@
     list-style: none;
     text-decoration: none;
 }
+body{
+    background-color: #000;
+}
 
 .background{
     background-image: url(../../dist/images/hero/hero_background.jpeg);
     background-repeat: no-repeat;
-    background-position: 30%;
-    
-    
+    background-size: contain;
+    background-position: 10%;
 }
 

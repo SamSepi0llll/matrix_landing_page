@@ -1,0 +1,47 @@
+@use 'variaveis';
+
+.for__you{
+    &__container{
+        padding: 5px 0px 0px;
+        display: flex;
+        gap: 24px;
+        border-bottom: 1px solid gray;
+        margin: 0 60px;
+        
+        .button{
+            padding-bottom: 6px;
+            font-size: 16px;
+            background: transparent;
+            color: variaveis.$corTexto;
+            border: none;
+            border-bottom: 1px solid transparent;
+            cursor: pointer;
+            font-weight: 700;
+
+            &:hover{
+                border-color: #fff;
+            }
+        }
+    }
+
+    &__list{
+        display: none;
+    }
+    &__list--active{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 24px;
+        padding: 10px 60px 4px;
+
+        img{
+            max-width: 100%;
+            cursor: pointer;
+            border-radius: 2px;
+            border: 3px solid transparent;
+
+            &:hover{
+                border-color: #fff;
+            }
+        }
+    }
+}

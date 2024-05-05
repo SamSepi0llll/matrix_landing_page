@@ -1,0 +1,51 @@
+@use 'variaveis';
+
+.footer{
+    padding: 180px 60px 30px;
+    
+
+    &__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    p{
+        color: variaveis.$corTexto;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 16px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    &__social{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        &__item{
+            
+            img{
+                height: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__links{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &__item{
+            color: variaveis.$corTexto;
+            padding: 0 4px;
+            font-size: 12px;
+            line-height: 18px;
+            &:hover{
+                color: lighten(#fff, 15%)
+            }
+        }
+    }
+}
