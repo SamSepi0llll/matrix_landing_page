@@ -1,0 +1,103 @@
+@use 'variaveis';
+
+.hero{
+    padding: 320px 45px 170px 30px;
+    display: flex;
+    flex-direction: column;
+    
+    
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0) 70%), linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%), linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.25) 15%, rgba(0, 0, 0, 0) 50%);
+    &__img_1{
+        img{
+            height: 140px;
+            width: 480px;
+            margin-bottom: 12px;
+        }
+    }
+    &__information{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        span{
+            color: variaveis.$corTexto;
+        }
+        img{
+            max-height: 21px;
+        }
+    }
+
+    &__button{
+        button{
+        transition: all ease .5s;
+        background-color: rgb(221, 221, 221);
+        color: #000;
+        max-width: 300px;
+        width: 100%;
+        border: 3px solid transparent;
+        border-radius: 8px;
+        padding: 9px 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 24px;
+        cursor: pointer;
+        margin-bottom: 24px;
+
+        &:hover{
+            transition: all ease .5s;
+            background-color: lighten(rgb(221, 221, 221), 5%);
+        }
+        }
+    }
+
+    &__add_list{
+        
+        button{
+        &:hover{
+            background-color: darken(rgba(0,0,0, .1), 10%);
+            transition: all ease .5s;
+        }
+        transition: all ease .5s;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100px;
+        width: 100%;
+        align-items: center;
+        gap: 4px;
+        background-color: transparent;
+        color: #fff;
+        border: 3px solid transparent;
+        border-radius: 8px;
+        padding: 2.5px 12px;
+        cursor: pointer;
+        }
+    }
+    &__text{
+        max-width: 610px;
+        color: variaveis.$corTexto;
+        display: flex;
+        flex-direction: column;
+        margin: 24px 0;
+        font-size: 16px;
+        line-height: 24px;
+        
+        &__small{
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 12px;
+
+            span{
+                margin-right: 5px;
+            }
+
+            p{
+                margin-top: 16px;
+            }
+        }
+    }
+}

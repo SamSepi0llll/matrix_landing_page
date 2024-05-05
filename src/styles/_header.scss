@@ -1,7 +1,12 @@
 @use 'variaveis';
 
 .header{
-    background: variaveis.$corDeFundoHeader;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background: rgba(0,0,0, .3);
+    backdrop-filter: blur(2px);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 8px 24px;
     &__container{
         display: flex;
         justify-content: space-between;
@@ -21,7 +26,7 @@
                     height: 40px;
                 }
                 a{
-                    color: variaveis.$corTextoHeader;
+                    color: variaveis.$corTexto;
                     font-size: 21px;
                     font-weight: bold;
 

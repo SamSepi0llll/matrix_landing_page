@@ -1,6 +1,6 @@
 @use 'variaveis';
 @use 'header';
-
+@use 'hero';
 *{
     box-sizing: border-box;
     padding: 0;
@@ -8,5 +8,13 @@
     font-family: roboto;
     list-style: none;
     text-decoration: none;
+}
+
+.background{
+    background-image: url(../../dist/images/hero/hero_background.jpeg);
+    background-repeat: no-repeat;
+    background-position: 30%;
+    
+    
 }
 
