@@ -1,5 +1,8 @@
 @use 'variaveis';
 
+.tab--is-active{
+    display: flex;
+}
 .for__you{
     &__container{
         padding: 5px 0px 0px;
@@ -18,6 +21,9 @@
             cursor: pointer;
             font-weight: 700;
 
+            &--is-active{
+                border-color: #fff;
+            }
             &:hover{
                 border-color: #fff;
             }
@@ -44,4 +50,28 @@
             }
         }
     }
+}
+
+
+.details{
+    padding: 30px 60px;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    h4{
+        color: variaveis.$corTexto;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    span{
+        color: variaveis.$corTexto;
+        font-size: 14px;
+        line-height: 21px;
+        max-width: 500px;
+    }
+    img{
+        height: 16px;
+    }
+    
 }
