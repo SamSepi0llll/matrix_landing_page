@@ -1,8 +1,6 @@
 @use 'variaveis';
 
-.tab--is-active{
-    display: flex;
-}
+
 .for__you{
     &__container{
         padding: 5px 0px 0px;
@@ -54,10 +52,14 @@
 
 
 .details{
-    padding: 30px 60px;
     display: none;
-    flex-direction: column;
-    gap: 20px;
+
+    &--is-active{
+        padding: 30px 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
     h4{
         color: variaveis.$corTexto;
         font-weight: bold;
