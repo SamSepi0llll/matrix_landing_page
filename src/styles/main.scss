@@ -21,5 +21,11 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 10%;
+
+    @media (max-width: 768px){
+        background-image: url(../../dist/images/hero/hero_background_celular.jpeg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
 

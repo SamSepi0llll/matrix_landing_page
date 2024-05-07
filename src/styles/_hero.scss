@@ -12,6 +12,11 @@
             height: 140px;
             width: 480px;
             margin-bottom: 12px;
+
+            @media (max-width: 768px){
+                height: 83px;
+                width: 277px;
+            }
         }
     }
     &__information{
@@ -21,9 +26,20 @@
 
         span{
             color: variaveis.$corTexto;
+            @media (max-width: 768px){
+            font-size: 12px;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            width: fit-content;
+            }
         }
         img{
             max-height: 21px;
+
+            @media (max-width: 768px){
+            height: 12px;
+            }
         }
     }
 

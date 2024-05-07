@@ -8,6 +8,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px){
+        flex-direction: column;   
+    }
     }
 
     p{
@@ -24,6 +28,10 @@
         align-items: center;
         gap: 16px;
 
+        @media (max-width: 768px){
+            margin-bottom: 16px;
+        }
+
         &__item{
             
             img{
@@ -37,6 +45,10 @@
         display: flex;
         align-items: center;
         gap: 20px;
+
+        @media (max-width: 768px){
+            flex-wrap: wrap;
+        }
 
         &__item{
             color: variaveis.$corTexto;

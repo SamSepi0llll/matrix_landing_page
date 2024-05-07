@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
     
+    //programação das abas & botão ativo
     const buttonfy = document.querySelectorAll('[data-tab-button=may-like]')
     const buttonDetails = document.querySelectorAll('[data-tab-button=details]')
             

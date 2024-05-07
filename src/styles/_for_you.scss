@@ -8,6 +8,10 @@
         gap: 24px;
         border-bottom: 1px solid gray;
         margin: 0 60px;
+
+        @media (max-width: 768px){
+            margin: 0 48px;
+        }
         
         .button{
             padding-bottom: 6px;
@@ -36,6 +40,11 @@
         grid-template-columns: repeat(6, 1fr);
         gap: 24px;
         padding: 10px 60px 4px;
+
+        @media (max-width: 768px){
+            grid-template-columns: repeat(3, 1fr);
+            padding: 10px 40px 4px;
+        }
 
         img{
             max-width: 100%;
